@@ -144,55 +144,55 @@ async def caption(client, message: Message):
             fa += "#خرده_جنایت_ها"
             X += "Ufak Tefek Cinayetler"
         if "Sibe Mamnooe" in m:
-            fa += "سیب ممنوعه"
+            fa += "#سیب ممنوعه"
             X += "Sibe Mamnooe"
         if "Setare Shomali" in m:
-            fa += "ستاره شمالی"
+            fa += "#ستاره شمالی"
             X += "Setare Shomali"
         if "Otaghe Ghermez" in m:
-            fa += "اتاق قرمز"
+            fa += "#اتاق قرمز"
             X += "Otaghe Ghermez"
         if "Mojeze Doctor" in m:
-            fa += "دکتر معجزه گر"
+            fa += "#دکتر معجزه گر"
             X += "Mojeze Doctor"
         if "Be Eshghe To Sogand" in m:
-            fa += "به عشق تو سوگند"
+            fa += "#به عشق تو سوگند"
             X += "Be Eshghe To Sogand"
         if "Eshgh Az No" in m:
-            fa += "عشق از نو"
+            fa += "#عشق از نو"
             X += "Eshgh Az No"
         if "Eshghe Mashroot" in m:
-            fa += "عشق مشروط"
+            fa += "#عشق مشروط"
             X += "Eshghe Mashroot"
         if "Cukurova" in m:
-            fa += "روزی روزگاری چکوروا"
+            fa += "#روزی روزگاری چکوروا"
             X += "Cukurova"
         if "Yek Jonun Yek Eshgh" in m:
-            fa += "یک جنون یک عشق"
+            fa += "#یک جنون یک عشق"
             X += "Yek Jonun Yek Eshgh"
         if "2020" in m:
-            fa += "2020"
+            fa += "#2020"
             X += "2020"
         if "Hekim" in m:
-            fa += "حکیم اوغلو"
+            fa += "#حکیم اوغلو"
             X += "Hekim"
         if "Godal" in m:
-            fa += "گودال"
+            fa += "#گودال"
             X += "Godal"
         if "Cukur" in m:
-            fa += "گودال"
+            fa += "#گودال"
             X += "Cukur"
         if "Khaneh Man" in m:
-            fa += "سرنوشتت خانه توست"
+            fa += "#سرنوشتت خانه توست"
             X += "Khaneh Man"
         if "Alireza" in m:
-            fa += "علیرضا"
+            fa += "#علیرضا"
             X += "Alireza"
         if "Dokhtare Safir" in m:
-            fa += "دختر سفیر"
+            fa += "#دختر سفیر"
             X += "Dokhtare Safir"
         if "Zarabane Ghalb" in m:
-            fa += "ضربان قلب"
+            fa += "#ضربان قلب"
             X += "Zarabane Ghalb"		
             
         if Z.__contains__("Fragman"):
@@ -288,9 +288,9 @@ async def caption(client, message: Message):
                 await message.edit(f"🔺{H} قسمت {Ee} \n🔸 دوبله فارسی {q} \n🆔👉 @dlmacvin_new | {fa}")
             else:
                 if message.video:
-                    await message.edit(f"♨️ سریال{fa} ( {n}) بازیرنویس چسبیده\n👌قسمت: {Ee} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
+                    await message.edit(f"♨️ سریال{fa} ( {n}) بازیرنویس چسبیده\n👌قسمت : {Ee} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
                 else:
-                    await message.edit(f"♨️ سریال{fa} ({n}) بازیرنویس چسبیده\n👌قسمت: {Ee} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
+                    await message.edit(f"♨️ سریال{fa} ({n}) بازیرنویس چسبیده\n👌قسمت : {Ee} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
         elif (media.file_size > 50) and not N.__contains__("E0") or N.__contains__("E1") or N.__contains__("E2") or N.__contains__("E3") or N.__contains__("E4") or N.__contains__("E5") or N.__contains__("E6") or N.__contains__("E7") or N.__contains__("E8") or N.__contains__("E9"):
             if "20" in D:
                 f = D.split("20")[0]
@@ -307,7 +307,7 @@ async def caption(client, message: Message):
             W = "20" or "19"
             if not W in D:
                 P = m.split("0P")[0]
-                f = P.replace("72", " ").replace("48", " ").replace("108", " ").replace("24", " ")
+                f = P.replace("72", "").replace("48", "").replace("108", "").replace("24", "")
                 YR = f"\n👌سال :"
             if '720P' in m:
                 Q = '720'
