@@ -80,9 +80,6 @@ async def caption(client, message: Message):
         if "Kardeslerim" in m:
             fa += "#خواهر_و_برادرانم"
             X += "Kardeslerim"
-        if "Marasli" in m:
-            fa += "#اهل_ماراش"
-            X += "Marasli"
         if "Ogrenci Evi" in m:
             fa += "#خانه_دانشجویی"
             X += "Ogrenci Evi"
@@ -92,9 +89,6 @@ async def caption(client, message: Message):
         if "Yetis Zeynep" in m:
             fa += "#برس_زینب"
             X += "Yetis Zeynep"
-        if "Marasli" in m:
-            fa += "#اهل_ماراش"
-            X += "Marasli"
         if "Hukumsuz" in m:
             fa += "#بی_قانون"
             X += "Hukumsuz"
@@ -199,16 +193,7 @@ async def caption(client, message: Message):
             X += "Dokhtare Safir"
         if "Zarabane Ghalb" in m:
             fa += "ضربان قلب"
-            X += "Zarabane Ghalb"
-        if "Cukurova" in m:
-            fa += "روزی روزگاری چکوروا"
-            X += "Cukurova"
-        if "Cukurova" in m:
-            fa += "روزی روزگاری چکوروا"
-            X += "Cukurova"
-        if "Cukurova" in m:
-            fa += "روزی روزگاری چکوروا"
-            X += "Cukurova"			
+            X += "Zarabane Ghalb"		
             
         if Z.__contains__("Fragman"):
             Jn = m.split("Bolum")[1]
