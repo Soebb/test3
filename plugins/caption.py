@@ -6,7 +6,7 @@ from pyrogram.errors import FloodWait
 async def caption(client, message: Message):
     media = message.video or message.document
     if (media is not None) and (media.file_name is not None):
-        m = media.file_name.replace("Fragmanı", "").replace(".", " ").replace("_", " ").replace("Fragmanlarım", "").replace("ı", "i").replace("İ", "I").replace("ö", "o").replace("Ö", "O").replace("Ü", "U").replace("ü", "u").replace("ë", "e").replace("@dlmacvin2 -", "").replace("@dlmacvin -", "").replace("Ë", "E").replace("Ä", "A").replace("ç", "c").replace("Ç", "C").replace("ş", "s").replace("Ş", "S").replace("ğ", "g").replace("Ğ", "G").replace("ä", "a")
+        m = media.file_name.replace("Fragmanı", "").replace("mp4", "").replace(".", " ").replace("_", " ").replace("Fragmanlarım", "").replace("ı", "i").replace("İ", "I").replace("ö", "o").replace("Ö", "O").replace("Ü", "U").replace("ü", "u").replace("ë", "e").replace("@dlmacvin2 -", "").replace("@dlmacvin -", "").replace("Ë", "E").replace("Ä", "A").replace("ç", "c").replace("Ç", "C").replace("ş", "s").replace("Ş", "S").replace("ğ", "g").replace("Ğ", "G").replace("ä", "a")
         D = m.replace("720P", "").replace("E20", "").replace("E120", "").replace("E220", "").replace("E320", "").replace("E420", "")
         N = m
         Z = media.file_name
@@ -215,9 +215,8 @@ async def caption(client, message: Message):
             if X.__contains__("a") or X.__contains__("o") or X.__contains__("i") or X.__contains__("c") or X.__contains__("b") or X.__contains__("e") or X.__contains__("l") or X.__contains__("n") or X.__contains__("m"):
                 Yd = X.replace(" ", "_")
                 Lo += "#" + f"{Yd}"
-                print(m.split(f"{X}", -1))
-                V = m.split(f"{X}", -1)[0]
-                E = V.split("Bolum")[0]
+                V = m.replace(f"{X}", "")
+                E = V.split("Bolum", -1)[0]
             else:
                 E = ""
             Tzz = tz.replace("#", " ")
