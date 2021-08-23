@@ -11,192 +11,192 @@ async def caption(client, message: Message):
         N = m
         Z = media.file_name
         fa = " "
-        X = " "
+        
         tz = " "
         Lo = " "
         if "Sen Cal Kapimi" in m:
             fa += "#تو_در_خانه_ام_را_بزن"
-            X += "Sen Cal Kapimi"
+            X = "Sen Cal Kapimi"
         
         if "Marasli" in m:
             fa += "#اهل_ماراش"
-            X += "Marasli"
+            X = "Marasli"
           
         if "Kalp Yarasi" in m:
             fa += "#زخم_قلب"
-            X += "Kalp Yarasi"
+            X = "Kalp Yarasi"
         
         if "Dunya Hali" in m:
             fa += "#احوال_دنیایی"
-            X += "Dunya Hali"
+            X = "Dunya Hali"
         if "Ver Elini Ask" in m:
             fa += "#دستت_را_بده_عشق"
-            X += "Ver Elini Ask"
+            X = "Ver Elini Ask"
         if "Ezel" in m:
             fa += "#ایزل"
-            X += "Ezel"
+            X = "Ezel"
         if "Ikimizin Sirri" in m:
             fa += "#راز_ما_دو_نفر"
-            X += "Ikimizin Sirri"
+            X = "Ikimizin Sirri"
         if "Dirilis Ertugrul" in m:
             fa += "#قیام_ارطغرل"
-            X += "Dirilis Ertugrul"
+            X = "Dirilis Ertugrul"
         if "Yemin" in m:
             fa += "#قسم"
-            X += "Yemin"
+            X = "Yemin"
         if "Ask i Memnu" in m:
             fa += "#عشق_ممنوع"
-            X += "Ask i Memnu"
+            X = "Ask i Memnu"
         if "Bozkir Arslani Celaleddin" in m:
             fa += "#جلال_الدین_خوارزمشاهی"
-            X += "Bozkir Arslani Celaleddin"
+            X = "Bozkir Arslani Celaleddin"
         if "Kazara Ask" in m:
             fa += "#عشق_تصادفی"
-            X += "Kazara Ask"
+            X = "Kazara Ask"
         if "Bas Belasi" in m:
             fa += "#بلای_جون"
-            X += "Bas Belasi"
+            X = "Bas Belasi"
         if "Ask Mantik Intikam" in m:
             fa += "#عشق_منطق_انتقام"
-            X += "Ask Mantik Intikam"
+            X = "Ask Mantik Intikam"
         if "Baht Oyunu" in m:
             fa += "#بازی_بخت"
-            X += "Baht Oyunu"
+            X = "Baht Oyunu"
         if "Ada Masali" in m:
             fa += "#قصه_جزیره"
-            X += "Ada Masali"
+            X = "Ada Masali"
         if "Askin Tarifi" in m:
             fa += "#طرز_تهیه_عشق"
-            X += "Askin Tarifi"
+            X = "Askin Tarifi"
         if "Yesilcam" in m:
             fa += "#سینمای_قدیم_ترکیه"
-            X += "Yesilcam"
+            X = "Yesilcam"
         if "Camdaki Kiz" in m:
             fa += "#دختر_پشت_پنجره"
-            X += "Camdaki Kiz"
+            X = "Camdaki Kiz"
         if "Bir Zamanlar Kibris" in m:
             fa += "#روزی_روزگاری_در_قبرس"
-            X += "Bir Zamanlar Kibris"
+            X = "Bir Zamanlar Kibris"
         if "Teskilat" in m:
             fa += "#تشکیلات"
-            X += "Teskilat"
+            X = "Teskilat"
         if "Kardeslerim" in m:
             fa += "#خواهر_و_برادرانم"
-            X += "Kardeslerim"
+            X = "Kardeslerim"
         if "Ogrenci Evi" in m:
             fa += "#خانه_دانشجویی"
-            X += "Ogrenci Evi"
+            X = "Ogrenci Evi"
         if "Sihirli Annem" in m:
             fa += "#مادر_سحرآمیز_من"
-            X += "Sihirli Annem"
+            X = "Sihirli Annem"
         if "Yetis Zeynep" in m:
             fa += "#برس_زینب"
-            X += "Yetis Zeynep"
+            X = "Yetis Zeynep"
         if "Hukumsuz" in m:
             fa += "#بی_قانون"
-            X += "Hukumsuz"
+            X = "Hukumsuz"
         if "Saygi" in m:
             fa += "#احترام"
-            X += "Saygi"
+            X = "Saygi"
         if "Vahsi Seyler" in m:
             fa += "#چیز_های_وحشی"
-            X += "Vahsi Seyler"
+            X = "Vahsi Seyler"
         if "Seref Bey" in m:
             fa += "#آقای_شرف"
-            X += "Seref Bey"
+            X = "Seref Bey"
         if "Gibi" in m:
             fa += "#مانند"
-            X += "Gibi"
+            X = "Gibi"
         if "Iste Bu Benim Masalim" in m:
             fa += "#این_داستان_من_است"
-            X += "Iste Bu Benim Masalim"
+            X = "Iste Bu Benim Masalim"
         if "Son Yaz" in m:
             fa += "#آخرین_تابستان"
-            X += "Son Yaz"
+            X = "Son Yaz"
         if "Akinci" in m:
             fa += "#مهاجم"
-            X += "Akinci"
+            X = "Akinci"
         if "Kirmizi Oda" in m:
             fa += "#اتاق_قرمز"
-            X += "Kirmizi Oda"
+            X = "Kirmizi Oda"
         if "Emanet" in m:
             fa += "#امانت"
-            X += "Emanet"
+            X = "Emanet"
         if "Ibo Show" in m:
             fa += "#برنامه_ایبو_شو"
-            X += "Ibo Show"
+            X = "Ibo Show"
         if "EDHO" in m:
             fa += "#راهزنان"
-            X += "EDHO"
+            X = "EDHO"
         if "Uyanis Buyuk Selcuklu" in m:
             fa += "#بیداری_سلجوقیان_بزرگ"
-            X += "Uyanis Buyuk Selcuklu"
+            X = "Uyanis Buyuk Selcuklu"
         if "Yasak Elma" in m:
             fa += "#سیب_ممنوعه"
-            X += "Yasak Elma"
+            X = "Yasak Elma"
         if "Sadakatsiz" in m:
             fa += "#بی_وفا #بی_صداقت"
-            X += "Sadakatsiz"
+            X = "Sadakatsiz"
         if "Bir Zamanlar Cukurova" in m:
             fa += "#روزی_روزگاری_چوکورا"
-            X += "Bir Zamanlar Cukurova"
+            X = "Bir Zamanlar Cukurova"
         if "Gonul Dagi" in m:
             fa += "#کوه_دل"
-            X += "Gonul Dagi"
+            X = "Gonul Dagi"
         if "Ufak Tefek Cinayetler" in m:
             fa += "#خرده_جنایت_ها"
-            X += "Ufak Tefek Cinayetler"
+            X = "Ufak Tefek Cinayetler"
         if "Sibe Mamnooe" in m:
             fa += "#سیب ممنوعه"
-            X += "Sibe Mamnooe"
+            X = "Sibe Mamnooe"
         if "Setare Shomali" in m:
             fa += "#ستاره شمالی"
-            X += "Setare Shomali"
+            X = "Setare Shomali"
         if "Otaghe Ghermez" in m:
             fa += "#اتاق قرمز"
-            X += "Otaghe Ghermez"
+            X = "Otaghe Ghermez"
         if "Mojeze Doctor" in m:
             fa += "#دکتر معجزه گر"
-            X += "Mojeze Doctor"
+            X = "Mojeze Doctor"
         if "Be Eshghe To Sogand" in m:
             fa += "#به عشق تو سوگند"
-            X += "Be Eshghe To Sogand"
+            X = "Be Eshghe To Sogand"
         if "Eshgh Az No" in m:
             fa += "#عشق از نو"
-            X += "Eshgh Az No"
+            X = "Eshgh Az No"
         if "Eshghe Mashroot" in m:
             fa += "#عشق مشروط"
-            X += "Eshghe Mashroot"
+            X = "Eshghe Mashroot"
         if "Cukurova" in m:
             fa += "#روزی روزگاری چکوروا"
-            X += "Cukurova"
+            X = "Cukurova"
         if "Yek Jonun Yek Eshgh" in m:
             fa += "#یک جنون یک عشق"
-            X += "Yek Jonun Yek Eshgh"
+            X = "Yek Jonun Yek Eshgh"
         if "2020" in m:
             fa += "#2020"
-            X += "2020"
+            X = "2020"
         if "Hekim" in m:
             fa += "#حکیم اوغلو"
-            X += "Hekim"
+            X = "Hekim"
         if "Godal" in m:
             fa += "#گودال"
-            X += "Godal"
+            X = "Godal"
         if "Cukur" in m:
             fa += "#گودال"
-            X += "Cukur"
+            X = "Cukur"
         if "Khaneh Man" in m:
             fa += "#سرنوشتت خانه توست"
-            X += "Khaneh Man"
+            X = "Khaneh Man"
         if "Alireza" in m:
             fa += "#علیرضا"
-            X += "Alireza"
+            X = "Alireza"
         if "Dokhtare Safir" in m:
             fa += "#دختر سفیر"
-            X += "Dokhtare Safir"
+            X = "Dokhtare Safir"
         if "Zarabane Ghalb" in m:
             fa += "#ضربان قلب"
-            X += "Zarabane Ghalb"		
+            X = "Zarabane Ghalb"		
             
         if Z.__contains__("Fragman"):
             Jn = m.split("Bolum")[1]
