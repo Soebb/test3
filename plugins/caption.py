@@ -131,7 +131,7 @@ async def caption(client, message: Message):
             fa += "#سیب_ممنوعه"
             X = "Yasak Elma"
         if "Sadakatsiz" in m:
-            fa += "#بی_وفا #بی_صداقت"
+            fa += "#بی_صداقت #بی_وفا"
             X = "Sadakatsiz"
         if "Bir Zamanlar Cukurova" in m:
             fa += "#روزی_روزگاری_چوکورا"
@@ -143,37 +143,37 @@ async def caption(client, message: Message):
             fa += "#خرده_جنایت_ها"
             X = "Ufak Tefek Cinayetler"
         if "Sibe Mamnooe" in m:
-            fa += "#سیب ممنوعه"
+            fa += "#سیب_ممنوعه"
             X = "Sibe Mamnooe"
         if "Setare Shomali" in m:
-            fa += "#ستاره شمالی"
+            fa += "#ستاره_شمالی"
             X = "Setare Shomali"
         if "Otaghe Ghermez" in m:
-            fa += "#اتاق قرمز"
+            fa += "#اتاق_قرمز"
             X = "Otaghe Ghermez"
         if "Mojeze Doctor" in m:
-            fa += "#دکتر معجزه گر"
+            fa += "#دکتر_معجزه_گر"
             X = "Mojeze Doctor"
         if "Be Eshghe To Sogand" in m:
-            fa += "#به عشق تو سوگند"
+            fa += "#به_عشق_تو_سوگند"
             X = "Be Eshghe To Sogand"
         if "Eshgh Az No" in m:
-            fa += "#عشق از نو"
+            fa += "#عشق_از_نو"
             X = "Eshgh Az No"
         if "Eshghe Mashroot" in m:
-            fa += "#عشق مشروط"
+            fa += "#عشق_مشروط"
             X = "Eshghe Mashroot"
         if "Cukurova" in m:
-            fa += "#روزی روزگاری چکوروا"
+            fa += "#روزی_روزگاری_چکوروا"
             X = "Cukurova"
         if "Yek Jonun Yek Eshgh" in m:
-            fa += "#یک جنون یک عشق"
+            fa += "#یک_جنون_یک_عشق"
             X = "Yek Jonun Yek Eshgh"
         if "2020" in m:
             fa += "#2020"
             X = "2020"
         if "Hekim" in m:
-            fa += "#حکیم اوغلو"
+            fa += "#حکیم_اوغلو"
             X = "Hekim"
         if "Godal" in m:
             fa += "#گودال"
@@ -182,16 +182,16 @@ async def caption(client, message: Message):
             fa += "#گودال"
             X = "Cukur"
         if "Khaneh Man" in m:
-            fa += "#سرنوشتت خانه توست"
+            fa += "#سرنوشتت_خانه_توست"
             X = "Khaneh Man"
         if "Alireza" in m:
             fa += "#علیرضا"
             X = "Alireza"
         if "Dokhtare Safir" in m:
-            fa += "#دختر سفیر"
+            fa += "#دختر_سفیر"
             X = "Dokhtare Safir"
         if "Zarabane Ghalb" in m:
-            fa += "#ضربان قلب"
+            fa += "#ضربان_قلب"
             X = "Zarabane Ghalb"		
             
         if Z.__contains__("Fragman"):
