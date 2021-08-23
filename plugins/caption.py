@@ -215,8 +215,8 @@ async def caption(client, message: Message):
             if X.__contains__("a") or X.__contains__("o") or X.__contains__("i") or X.__contains__("c") or X.__contains__("b") or X.__contains__("e") or X.__contains__("l") or X.__contains__("n") or X.__contains__("m"):
                 Yd = X.replace(" ", "_")
                 Lo += "#" + f"{Yd}"
-                V = m.split(f"{X}", -1)[1]
-                print(V)
+                print(m.split(f"{X}", -1))
+                V = m.split(f"{X}", -1)[0]
                 E = V.split("Bolum")[0]
             else:
                 E = ""
