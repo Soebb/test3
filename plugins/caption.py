@@ -11,21 +11,17 @@ async def caption(client, message: Message):
         N = m
         Z = media.file_name
         fa = " "
-        
         tz = " "
         Lo = " "
         if "Sen Cal Kapimi" in m:
             fa += "#تو_در_خانه_ام_را_بزن"
             X = "Sen Cal Kapimi"
-        
         if "Marasli" in m:
             fa += "#اهل_ماراش"
             X = "Marasli"
-          
         if "Kalp Yarasi" in m:
             fa += "#زخم_قلب"
             X = "Kalp Yarasi"
-        
         if "Dunya Hali" in m:
             fa += "#احوال_دنیایی"
             X = "Dunya Hali"
@@ -182,7 +178,7 @@ async def caption(client, message: Message):
         if "Godal" in m:
             fa += "#گودال"
             X = "Godal"
-        if "Cukur" in m:
+        if ("Cukur" in m) and not m.__contains__("Cukurova"):
             fa += "#گودال"
             X = "Cukur"
         if "Khaneh Man" in m:
