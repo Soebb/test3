@@ -21,6 +21,7 @@ async def caption(client, message: Message):
         if "Marasli" in m:
             fa += "#اهل_ماراش"
             X += "Marasli"
+            Kh = m.replace(f"{X}", "")
         if "Kalp Yarasi" in m:
             fa += "#زخم_قلب"
             X += "Kalp Yarasi"
