@@ -17,15 +17,15 @@ async def caption(client, message: Message):
         if "Sen Cal Kapimi" in m:
             fa += "#تو_در_خانه_ام_را_بزن"
             X += "Sen Cal Kapimi"
-            Kh = m.replace("Sen Cal Kapimi", "")
+        
         if "Marasli" in m:
             fa += "#اهل_ماراش"
             X += "Marasli"
-            Kh = m.replace(f"{X}", "")
+          
         if "Kalp Yarasi" in m:
             fa += "#زخم_قلب"
             X += "Kalp Yarasi"
-            Kh = m.replace(f"{X}", "")
+        
         if "Dunya Hali" in m:
             fa += "#احوال_دنیایی"
             X += "Dunya Hali"
@@ -215,8 +215,8 @@ async def caption(client, message: Message):
             if X.__contains__("a") or X.__contains__("o") or X.__contains__("i") or X.__contains__("c") or X.__contains__("b") or X.__contains__("e") or X.__contains__("l") or X.__contains__("n") or X.__contains__("m"):
                 Yd = X.replace(" ", "_")
                 Lo += "#" + f"{Yd}"
-                V = Kh.split("Bolum")[0]
-                E = V.replace(".", "").replace("_", " ").replace("-", " ")
+                V = m.split(f"{X}", -1)
+                E = V.split("Bolum")[0]
             else:
                 E = ""
             Tzz = tz.replace("#", " ")
