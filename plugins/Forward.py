@@ -1,3 +1,5 @@
+from pyrogram import Client, filters
+from pyrogram.errors import FloodWait
 
 
 @Client.on_message(filters.channel & filters.edited & (filters.video | filters.document))
