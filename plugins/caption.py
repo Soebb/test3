@@ -226,7 +226,19 @@ async def caption(client, message: Message):
             else:
                 Ee = ""
             Tzz = tz.replace("#", " ")
-            date = "پنجشنبه ساعت 4 بامداد از رسانه اینترنتی دی ال مکوین"
+            date = " "
+
+            if "Ask Mantik Intikam" in m:
+                date += "جمعه ساعت 4 بامداد از رسانه اینترنتی دی ال مکوین"
+            if "Sen Cal Kapimi" in m:
+                date += "چهارشنبه ساعت 4 بامداد از رسانه اینترنتی دی ال مکوین"
+            if "Kalp Yarasi" in m:
+                date += "دوشنبه ساعت 4 بامداد از رسانه اینترنتی دی ال مکوین"
+            if "Bas Belasi" in m:
+                date += "یکشنبه ساعت 4 بامداد از رسانه اینترنتی دی ال مکوین"
+            
+
+
             msg = await message.edit(f"⬇️ تیزر{Tzz} قسمت {Ee} ({fa} ) {Lo} ، بازیرنویس چسبیده\n\n🔻 پخش {date}\n\n🆔👉 @dlmacvin_new")
         if (media.file_size > 50) and N.__contains__("E0") or N.__contains__("E1") or N.__contains__("E2") or N.__contains__("E3") or N.__contains__("E4") or N.__contains__("E5") or N.__contains__("E6") or N.__contains__("E7") or N.__contains__("E8") or N.__contains__("E9"):
             if '720P' in m:
