@@ -20,6 +20,9 @@ async def caption(client, message: Message):
         if "Sen Cal Kapimi" in m:
             fa += "#تو_در_خانه_ام_را_بزن"
             X = "Sen Cal Kapimi"
+        if "Dokhtarane Gol Foroosh" in m:
+            fa += "#دختران_گل_فروش"
+            X = "Dokhtarane Gol Foroosh"
         if "Marasli" in m:
             fa += "#اهل_ماراش"
             X = "Marasli"
@@ -194,10 +197,13 @@ async def caption(client, message: Message):
         if "Dokhtare Safir" in m:
             fa += "#دختر_سفیر"
             X = "Dokhtare Safir"
+        if "Marashli" in m:
+            fa += "#ماراشلی - #اهل_ماراش"
+            X = "Zarabane Ghalb"		
         if "Zarabane Ghalb" in m:
             fa += "#ضربان_قلب"
-            X = "Zarabane Ghalb"		
-            
+            X = "Zarabane Ghalb"            
+			
         if Z.__contains__("Fragman"):
             Jn = m.split("Bolum")[1]
             if "2" in Jn:
@@ -216,12 +222,12 @@ async def caption(client, message: Message):
                 Yd = X.replace(" ", "_")
                 Lo += "#" + f"{Yd}"
                 V = m.replace(f"{X}", "")
-                E = V.split("Bolum", -1)[0]
+                Ee = V.split("Bolum", -1)[0]
             else:
-                E = ""
+                Ee = ""
             Tzz = tz.replace("#", " ")
             date = "پنجشنبه ساعت 4 بامداد از رسانه اینترنتی دی ال مکوین"
-            msg = await message.edit(f"⬇️ تیزر{Tzz} قسمت {E} ({fa} ) {Lo} ، بازیرنویس چسبیده\n\n🔻 پخش {date}\n\n🆔👉 @dlmacvin_new")
+            msg = await message.edit(f"⬇️ تیزر{Tzz} قسمت {Ee} ({fa} ) {Lo} ، بازیرنویس چسبیده\n\n🔻 پخش {date}\n\n🆔👉 @dlmacvin_new")
         if (media.file_size > 50) and N.__contains__("E0") or N.__contains__("E1") or N.__contains__("E2") or N.__contains__("E3") or N.__contains__("E4") or N.__contains__("E5") or N.__contains__("E6") or N.__contains__("E7") or N.__contains__("E8") or N.__contains__("E9"):
             if '720P' in m:
                 Q = '720'
@@ -238,7 +244,7 @@ async def caption(client, message: Message):
             if 'E0' in N:
                 O = N.split("E0")[1]
                 T = O.split()[0]
-                E = '0' + f"{T}"
+                E = f"{T}"
                 n = N.split("E0")[0]
             if 'E1' in N:
                 O = N.split("E1")[1]
@@ -285,18 +291,14 @@ async def caption(client, message: Message):
                 T = O.split()[0]
                 E = '9' + f"{T}"
                 n = N.split("E9")[0]
-            if E.startswith("0"):
-                Ee = E.replace("0", "")
-            else:
-                Ee = E
             if not "Hard-Sub" in N:
                 H = fa.replace("_", " ").replace("#", "")
-                msg = await message.edit(f"🔺{H} قسمت {Ee} \n🔸 دوبله فارسی {q} \n🆔👉 @dlmacvin_new | {fa}")
+                msg = await message.edit(f"🔺{H} قسمت {E} \n🔸 دوبله فارسی {q} \n🆔👉 @dlmacvin_new | {fa}")
             else:
                 if message.video:
-                    msg = await message.edit(f"♨️ سریال{fa} ( {n}) بازیرنویس چسبیده\n👌قسمت : {Ee} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
+                    msg = await message.edit(f"♨️ سریال{fa} ( {n}) بازیرنویس چسبیده\n👌قسمت : {E} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
                 else:
-                    msg = await message.edit(f"♨️ سریال{fa} ( {n}) بازیرنویس چسبیده\n👌قسمت : {Ee} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
+                    msg = await message.edit(f"♨️ سریال{fa} ( {n}) بازیرنویس چسبیده\n👌قسمت : {E} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
         elif (media.file_size > 50) and not N.__contains__("E0") or N.__contains__("E1") or N.__contains__("E2") or N.__contains__("E3") or N.__contains__("E4") or N.__contains__("E5") or N.__contains__("E6") or N.__contains__("E7") or N.__contains__("E8") or N.__contains__("E9"):
             if "20" in D:
                 f = D.split("20")[0]
