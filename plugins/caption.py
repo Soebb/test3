@@ -347,7 +347,7 @@ async def caption(client, message: Message):
             try:
                 if "Ghermez" in media.file_name:
                     await msg.copy(chat_id=-1001166919373)
-                elif "Chukurova" in media.file_name:
+                elif "Cukurova" in media.file_name:
                     await msg.copy(chat_id=-1001437520825)
                 elif "Mojeze" in media.file_name:
                     await msg.copy(chat_id=-1001071120514)
