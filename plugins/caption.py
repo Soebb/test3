@@ -238,8 +238,8 @@ async def caption(client, message: Message):
                 date += "یکشنبه ساعت 4 بامداد از رسانه اینترنتی دی ال مکوین"
             
 
-
-            msg = await message.edit(f"⬇️ تیزر{Tzz} قسمت {Ee} ({fa} ) {Lo} ، بازیرنویس چسبیده\n\n🔻 پخش {date}\n\n🆔👉 @dlmacvin_new")
+            MSG = f"⬇️ تیزر{Tzz} قسمت {Ee} ({fa} ) {Lo} ، بازیرنویس چسبیده" 
+            msg = await message.edit(f"{MSG.replace("  ", " ")}\n\n🔻 پخش {date}\n\n🆔👉 @dlmacvin_new")
         if (media.file_size > 50) and N.__contains__("E0") or N.__contains__("E1") or N.__contains__("E2") or N.__contains__("E3") or N.__contains__("E4") or N.__contains__("E5") or N.__contains__("E6") or N.__contains__("E7") or N.__contains__("E8") or N.__contains__("E9"):
             if '720P' in m:
                 Q = '720'
@@ -256,7 +256,10 @@ async def caption(client, message: Message):
             if 'E0' in N:
                 O = N.split("E0")[1]
                 T = O.split()[0]
-                E = f"{T}"
+                if T.startswith("0"):
+                    E = f"{T.replace("0", "")}"
+                else:
+                    E = f"{T}"
                 n = N.split("E0")[0]
             if 'E1' in N:
                 O = N.split("E1")[1]
