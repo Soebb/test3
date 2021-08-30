@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.errors import FloodWait
 
-chnls = "-1001166919373 -1001437520825 -1001071120514 -1001546442991 -1001322014891 -1001409508844"
+chnls = "-1001166919373 -1001437520825 -1001071120514 -1001546442991 -1001322014891 -1001409508844 -1001537554747 -1001462444753 -1001146657589 -1001592624165 -1001588137496"
 CHANNELS = set(int(x) for x in chnls.split())
 
 
@@ -199,10 +199,142 @@ async def caption(client, message: Message):
             X = "Dokhtare Safir"
         if "Marashli" in m:
             fa += "#ماراشلی - #اهل_ماراش"
-            X = "Zarabane Ghalb"		
+            X = "Marashli"
         if "Zarabane Ghalb" in m:
             fa += "#ضربان_قلب"
-            X = "Zarabane Ghalb"            
+            X = "Zarabane Ghalb"
+        if "Aparteman Bigonahan" in m:
+            fa += "#آپارتمان_بی_گناهان"
+            X = "Aparteman Bigonahan" 
+        if "Hayat Agaci" in m:
+            fa += "#درخت_زندگی"
+            X = "Hayat Agaci" 
+        if "Ruya" in m:
+            fa += "#رویا"
+            X = "Ruya" 
+        if "Uzak Sehrin Masali" in m:
+            fa += "#داستان_شهری_دور"
+            X = "Uzak Sehrin Masali"
+        if "Icimizden Biri" in m:
+            fa += "#یکی_از_میان_ما"
+            X = "Icimizden Biri"
+        if "Kocaman Ailem" in m:
+            fa += "#خانواده_بزرگم"
+            X = "Kocaman Ailem"
+        if "Insanlik Sucu" in m:
+            fa += "#جرم_انسانیت"
+            X = "Insanlik Sucu"
+        if "Tutsak" in m:
+            fa += "#اسیر "
+            X = "Tutsak"
+        if "Fazilet Hanim ve Kızlari" in m:
+            fa += "#فضیلت_خانم_و_دخترانش"
+            X = "Fazilet Hanim ve Kızlari"
+        if "Ferhat Ile Sirin" in m:
+            fa += "#فرهاد_و_شیرین"
+            X = "Ferhat Ile Sirin"
+        if "Gel Dese Ask" in m:
+            fa += "#عشق_صدا_میزند"
+            X = "Gel Dese Ask"			
+        if "Gibi" in m:
+            fa += "#مانند"
+            X = "Gibi"
+        if "Halka" in m:
+            fa += "#حلقه"
+            X = "Halka"
+        if "Hercai" in m:
+            fa += "#هرجایی"
+            X = "Hercai"
+        if "Hizmetciler" in m:
+            fa += "#خدمتکاران"
+            X = "Hizmetciler"
+        if "Istanbullu Gelin" in m:
+            fa += "#عروس_استانبولی"
+            X = "Istanbullu Gelin"
+        if "Kalp Atisi " in m:
+            fa += "#ضربان_قلب"
+            X = "Kalp Atisi "
+        if "Kara Sevda" in m:
+            fa += "#کاراسودا #عشق_بی_پایان"
+            X = "Kara Sevda"
+        if "Kardes Cocuklari" in m:
+            fa += "#خواهرزاده_ها"
+            X = "Kardes Cocuklari"
+        if "Kimse Bilmez" in m:
+            fa += "#کسی_نمیداند"
+            X = "Kimse Bilmez"
+        if "Kursun" in m:
+            fa += "#گلوله"
+            X = "Kursun"
+        if "Kuzey Yildizi Ilk Ask" in m:
+            fa += "#ستاره_شمالی_عشق_اول"
+            X = "Kuzey Yildizi Ilk Ask"
+        if "Kuzgun" in m:
+            fa += "#کلاغ #کوزگون"
+            X = "Kuzgun"
+        if "Meryem" in m:
+            fa += "#مریم"
+            X = "Meryem"
+        if "Muhtesem Ikili" in m:
+            fa += "#زوج_طلایی"
+            X = "Muhtesem Ikili"
+        if "Nefes Nefese" in m:
+            fa += "#نفس_زنان"
+            X = "Nefes Nefese"
+        if "Ogretmen" in m:
+            fa += "#معلم"
+            X = "Ogretmen"
+        if "Olene Kadar" in m:
+            fa += "#تا_حد_مرگ"
+            X = "Olene Kadar"
+        if "Sahsiyet" in m:
+            fa += "#شخصیت"
+            X = "Sahsiyet"			
+        if "Sahin Tepesi" in m:
+            fa += "#تپه_شاهین"
+            X = "Sahin Tepesi"
+        if "Savasci" in m:
+            fa += "#جنگجو"
+            X = "Savasci"
+        if "Sefirin Kizi" in m:
+            fa += "#دختر_سفیر"
+            X = "Sefirin Kizi"
+        if "Sevgili Gecmis" in m:
+            fa += "#گذشته_ی_عزیز"
+            X = "Sevgili Gecmis"
+        if "Sheref Bey" in m:
+            fa += "#آقای_شرف"
+            X = "Sheref Bey"
+        if "Sihirlis Annem" in m:
+            fa += "#مادر_جادویی_من"
+            X = "Sihirlis Annem"
+        if "The Protector" in m:
+            fa += "#محافظ"
+            X = "The Protector"
+        if "Vahsi Seyler" in m:
+            fa += "#چیزهای_وحشی"
+            X = "Vahsi Seyler"
+        if "Vurgun" in m:
+            fa += "#زخمی"
+            X = "Vurgun"
+        if "Ya Istiklal Ya Olum" in m:
+            fa += "#یا_استقلال_یا_مرگ"
+            X = "Ya Istiklal Ya Olum"
+        if "Yalanci" in m:
+            fa += "#دروغگو"
+            X = "Yalanci"
+        if "Bir Ask Hikayesi" in m:
+            fa += "#حکایت_یک_عشق"
+            X = "Bir Ask Hikayesi"
+        if "Carpisma" in m:
+            fa += "#تصادف"
+            X = "Carpisma"
+        if "Cocuk" in m:
+            fa += "#بچه"
+            X = "Cocuk"
+        if "Lise Devriyesi" in m:
+            fa += "#گشت_مدرسه"
+            X = "Lise Devriyesi"	
 			
         if Z.__contains__("Fragman"):
             Jn = m.split("Bolum")[1]
@@ -229,17 +361,24 @@ async def caption(client, message: Message):
             date = " "
 
             if "Ask Mantik Intikam" in m:
-                date += "جمعه ساعت 4 بامداد از رسانه اینترنتی دی ال مکوین"
+                date += "شنبه ساعت 4 بامداد از رسانه اینترنتی دی ال مکوین"
             if "Sen Cal Kapimi" in m:
-                date += "چهارشنبه ساعت 4 بامداد از رسانه اینترنتی دی ال مکوین"
+                date += "پنجشنبه ساعت 4 بامداد از رسانه اینترنتی دی ال مکوین"
             if "Kalp Yarasi" in m:
-                date += "دوشنبه ساعت 4 بامداد از رسانه اینترنتی دی ال مکوین"
+                date += "سه شنبه ساعت 4 بامداد از رسانه اینترنتی دی ال مکوین"
             if "Bas Belasi" in m:
-                date += "یکشنبه ساعت 4 بامداد از رسانه اینترنتی دی ال مکوین"
-            
+                date += "شنبه از رسانه اینترنتی دی ال مکوین"
+            if "Uzak Sehrin Masali" in m:
+                date += "بزودی از رسانه اینترنتی دی ال مکوین"
+            if "Icimizden Biri" in m:
+                date += "بزودی از رسانه اینترنتی دی ال مکوین"
+            if "Elkizi" in m:
+                date += "بزودی از رسانه اینترنتی دی ال مکوین"
+
             FA = fa.replace("#", "").replace("_", " ")
             MSG = f"⬇️ تیزر{Tzz} قسمت {Ee} ({FA} ) {Lo} ، بازیرنویس چسبیده" 
             msg = await message.edit(f"{MSG.replace("  ", " ").replace("720P", "").replace("1080P", "").replace("480P", "").replace("240P", "")}\n\n🔻 پخش {date}\n\n🆔👉 @dlmacvin_new")
+               
         if (media.file_size > 50) and N.__contains__("E0") or N.__contains__("E1") or N.__contains__("E2") or N.__contains__("E3") or N.__contains__("E4") or N.__contains__("E5") or N.__contains__("E6") or N.__contains__("E7") or N.__contains__("E8") or N.__contains__("E9"):
             if '720P' in m:
                 Q = '720'
@@ -360,5 +499,15 @@ async def caption(client, message: Message):
                     await msg.copy(chat_id=-1001322014891)
                 elif "Eshghe Mashroot" in media.file_name:
                     await msg.copy(chat_id=-1001409508844)
+                elif "Alireza" in media.file_name:
+                    await msg.copy(chat_id=-1001537554747)
+                elif "Eshgh Az No" in media.file_name:
+                    await msg.copy(chat_id=-1001462444753)
+                elif "Setare Shomali" in media.file_name:
+                    await msg.copy(chat_id=-1001146657589)
+                elif "Be Eshghe To Sogand" in media.file_name:
+                    await msg.copy(chat_id=-1001592624165)
+                elif "Aparteman Bigonahan" in media.file_name:
+                    await msg.copy(chat_id=-1001588137496)
             except Exception as error:
                 print(error)
