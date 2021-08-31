@@ -484,7 +484,12 @@ async def caption(client, message: Message):
                 q = G.replace(".1", " ").replace(".mkv", " ")
             else:
                 q = ""
-            msg = await message.edit(f"♨️ فیلم {f.replace("Hard-Sub", "")} بازیرنویس چسبیده{YR.replace("720P", "").replace("480P", "").replace("1080P", "").replace("240P", "").replace("mkv", "").replace("mp4", "")} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
+            YrR = f"{YR.replace("720P", "").replace("480P", "").replace("1080P", "").replace("240P", "").replace("mkv", "").replace("mp4", "")}"
+            if (YrR == "20"):
+                YrR = "2020"
+            if not "20" in YrR:
+                YrR = "20" + YrR
+            msg = await message.edit(f"♨️ فیلم {f.replace("Hard-Sub", "").replace(" 20", "")} بازیرنویس چسبیده{YrR} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
         if (message.chat.id == -1001457054266):
             try:
                 if "Ghermez" in media.file_name:
