@@ -1,11 +1,10 @@
-from pyrogram import Client, filters, Message
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 import os
 import io
 from PIL import Image
 import mutagen
 from mutagen.mp3 import MP3
-from mutagen.mp4 import MP4
 import requests
 from music_tag import load_file
 from pyrogram.errors import FloodWait
@@ -35,7 +34,7 @@ chnls = "-1001166919373 -1001437520825 -1001071120514 -1001546442991 -1001322014
 CHANNELS = set(int(x) for x in chnls.split())
 
 
-@Client.on_message(filters.media & filters.channel)
+@Bot.on_message(filters.media & filters.channel)
 async def caption(client, message: Message):
     media = message.video or message.document
     if (media is not None) and (media.file_name is not None) and (not message.chat.id in CHANNELS):
