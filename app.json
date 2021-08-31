@@ -1,21 +1,23 @@
 {
-  "name": "ChannelAutoCaption",
-  "stack": "heroku-20",
-  "description": "Telegram auto channel caption bot.",
-  "repository": "https://github.com/samadii/ChannelAutoCaption",
+  "name": "AutoMusicTagEditor",
   "env": {
     "BOT_TOKEN": {
       "description": "Your bot token, as a string.",
       "value": ""
     },
     "API_ID": {
-      "description": "Get this value from https://my.telegram.org"
+      "description": "Add your telegram API_ID",
+      "value": ""
     },
     "API_HASH": {
-      "description": "Get this value from https://my.telegram.org"
-}   
+      "description": "Add your telegram API_HASH",
+      "value": ""
+}
   },
   "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
     {
       "url": "heroku/python"
     }
