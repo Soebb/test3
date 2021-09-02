@@ -608,7 +608,7 @@ async def caption(client, message: Message):
 
             FA = fa.replace("#", "").replace("_", " ")
             MSG = f"⬇️ تیزر{Tzz} قسمت {Ee} ({FA} ) {Lo} ، بازیرنویس چسبیده" 
-            msg = await message.edit(f"{MSG.replace("  ", " ").replace("720P", "").replace("1080P", "").replace("480P", "").replace("240P", "")}\n\n🔻 پخش {date}\n\n🆔👉 @dlmacvin_new")
+            msg = await message.edit(f"{MSG.replace('  ', ' ').replace('720P', '').replace('1080P', '').replace('480P', '').replace('240P', '')}\n\n🔻 پخش {date}\n\n🆔👉 @dlmacvin_new")
                
         if (media.file_size > 50) and N.__contains__("E0") or N.__contains__("E1") or N.__contains__("E2") or N.__contains__("E3") or N.__contains__("E4") or N.__contains__("E5") or N.__contains__("E6") or N.__contains__("E7") or N.__contains__("E8") or N.__contains__("E9"):
             if '720P' in m:
@@ -627,7 +627,7 @@ async def caption(client, message: Message):
                 O = N.split("E0")[1]
                 T = O.split()[0]
                 if T.startswith("0"):
-                    E = f"{T.replace("0", "")}"
+                    E = f"{T.replace('0', '')}"
                 else:
                     E = f"{T}"
                 n = N.split("E0")[0]
@@ -715,12 +715,13 @@ async def caption(client, message: Message):
                 q = G.replace(".1", " ").replace(".mkv", " ")
             else:
                 q = ""
-            YrR = f"{YR.replace("720P", "").replace("480P", "").replace("1080P", "").replace("240P", "").replace("mkv", "").replace("mp4", "")}"
+            YrR = f"{YR.replace('720P', '').replace('480P', '').replace('1080P', '').replace('240P', '').replace('mkv', '').replace('mp4', '')}"
             if (YrR == "20"):
                 YrR = "2020"
             if not "20" in YrR:
                 YrR = "20" + YrR
-            msg = await message.edit(f"♨️ فیلم {f.replace("Hard-Sub", "").replace(" 20", "")} بازیرنویس چسبیده{YrR} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
+            msg = await message.edit(f"♨️ فیلم {f.replace('Hard-Sub', '').replace(' 20', '')} بازیرنویس چسبیده{YrR} {q} \n🔻تماشای آنلاین بدون فیلتر شکن: \n🆔👉 @dlmacvin_new")
+        
         if (message.chat.id == -1001457054266):
             try:
                 if "Ghermez" in media.file_name:
