@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
-import os
+import os, datetime
 import io
 from PIL import Image
 import mutagen
@@ -44,8 +44,18 @@ async def start(bot, update):
 @Bot.on_message(filters.video)
 async def tag(bot, m):
     await m.download("vid.mp4")
-    video = cv2.VideoCapture("vid.mp4")
-    duration = video.get(cv2.CAP_PROP_POS_MSEC)
-    print(duration)
+    data = cv2.VideoCapture("vid.mp4")
+    frames = data.get(cv2.CAP_PROP_FRAME_COUNT) 
+
+    fps = int(data.get(cv2.CAP_PROP_FPS)) 
+
+    seconds = int(frames / fps) 
+
+    video_time = str(datetime.timedelta(seconds=seconds)) 
+
+    print("duration in seconds:", seconds) 
+
+    print("video time:", video_time) 
+
 
 Bot.run()
