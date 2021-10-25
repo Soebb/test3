@@ -44,7 +44,7 @@ async def start(bot, update):
 @Bot.on_message(filters.video)
 async def tag(bot, m):
     await m.download("vid.mp4")
-    video = cv2.VideoCapture(filename)
+    video = cv2.VideoCapture("vid.mp4")
     duration = video.get(cv2.CAP_PROP_POS_MSEC)
     print(duration)
 
