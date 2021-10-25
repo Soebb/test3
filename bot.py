@@ -43,8 +43,8 @@ async def start(bot, update):
 
 @Bot.on_message(filters.video)
 async def tag(bot, m):
-    await m.download("vid.mp4")
-    data = cv2.VideoCapture("vid.mp4")
+    await m.download("temp/vid.mp4")
+    data = cv2.VideoCapture("temp/vid.mp4")
     frames = data.get(cv2.CAP_PROP_FRAME_COUNT) 
 
     fps = int(data.get(cv2.CAP_PROP_FPS)) 
